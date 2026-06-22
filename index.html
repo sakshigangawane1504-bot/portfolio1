@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sakshi Gangawane — Data Analytics Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <span class="nav-logo">SG<span class="dot">.</span></span>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">&#9776;</button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="closeMobileMenu()">About</a>
+    <a href="#skills" onclick="closeMobileMenu()">Skills</a>
+    <a href="#projects" onclick="closeMobileMenu()">Projects</a>
+    <a href="#experience" onclick="closeMobileMenu()">Experience</a>
+    <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-greeting">Hey, I'm</p>
+      <h1 class="hero-name">Sakshi Gangawane<span class="dot">.</span></h1>
+      <p class="hero-role">
+        <span class="role-tag" id="roleTag">Data Analytics Associate</span>
+      </p>
+      <p class="hero-bio">
+        Turning complex datasets into actionable insights through Python, SQL, Power BI, and data storytelling.
+        Currently open to new opportunities.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-graphic">
+      <div class="blob"></div>
+      <div class="avatar-ring">
+        <!-- Replace with: <img src="your-photo.jpg" alt="Sakshi Gangawane" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" /> -->
+        <img src="photo.png" alt="Sakshi Gangawane" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Hi! I'm <strong>Sakshi Gangawane</strong>, a Data Analytics Associate from
+            <strong>Pune, Maharashtra</strong>. I specialize in transforming complex datasets
+            into actionable business insights through dashboards, visualizations, and BI reporting.
+          </p>
+          <p>
+            I'm pursuing my B.Tech in Computer Science & Engineering at
+            <strong>Dr. Babasaheb Ambedkar Technological University (DBATU)</strong> (2022–2026),
+            and I'm passionate about data storytelling, process optimization, and leveraging
+            analytics to drive business growth.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">2</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">180K+</span>
+              <span class="stat-label">Records Analyzed</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">2</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+          </div>
+          <!-- Save your resume as resume.pdf in the same folder -->
+          <a href="resume.pdf" class="btn btn-primary" download>Download Resume</a>
+        </div>
+        <div class="about-image-box">
+          <div class="about-deco-box">
+            <span class="deco-text">Data-driven decisions start with clean insights 📈</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section bg-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills & Tools</h2>
+      <p class="section-subtitle">Technologies I work with</p>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <span class="skill-icon">🐍</span>
+          <span class="skill-name">Python</span>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">🗄️</span>
+          <span class="skill-name">SQL / MySQL</span>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">📊</span>
+          <span class="skill-name">Power BI</span>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">📗</span>
+          <span class="skill-name">Microsoft Excel</span>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">🔢</span>
+          <span class="skill-name">DAX</span>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">🐼</span>
+          <span class="skill-name">Pandas & NumPy</span>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">📉</span>
+          <span class="skill-name">Matplotlib & Seaborn</span>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">🧹</span>
+          <span class="skill-name">Data Cleaning & ETL</span>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">📋</span>
+          <span class="skill-name">EDA & Statistics</span>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">☁️</span>
+          <span class="skill-name">AWS (Basics)</span>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">🐙</span>
+          <span class="skill-name">Git & GitHub</span>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">🤖</span>
+          <span class="skill-name">Generative AI</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title">My Projects</h2>
+      <p class="section-subtitle">Data projects I've built</p>
+      <div class="projects-grid">
+
+        <!-- PROJECT 1 -->
+        <div class="project-card">
+          <div class="project-img-box">
+            <div class="project-emoji">🚚</div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Matplotlib</span>
+              <span class="tag">Seaborn</span>
+            </div>
+            <h3 class="project-title">Supply Chain BI & Risk Analysis</h3>
+            <p class="project-desc">
+              Analyzed 180K+ supply chain records across 53 business variables. Uncovered a 54.71% late delivery rate,
+              estimated $2.1M in losses, and delivered logistics optimization recommendations.
+            </p>
+            <div class="project-links">
+              <!-- Add your GitHub link below -->
+              <a href="https://github.com/sakshigangawane1504-bot/supply-chain-analysis" target="_blank" class="btn btn-sm btn-outline">GitHub</a>
+              <a href="https://github.com/sakshigangawane1504-bot/supply-chain-analysis/blob/main/Suply_Chain_Data_Analysis.ipynb" target="_blank" class="btn btn-sm btn-primary">View Notebook</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card">
+          <div class="project-img-box">
+            <div class="project-emoji">🏦</div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Power BI</span>
+              <span class="tag">SQL</span>
+              <span class="tag">DAX</span>
+              <span class="tag">Excel</span>
+            </div>
+            <h3 class="project-title">Bank Loan Analysis Dashboard</h3>
+            <p class="project-desc">
+              Built interactive Power BI dashboards to monitor loan applications, repayments, and KPIs.
+              Classified loans into Good/Bad categories and implemented MTD & YoY metrics using advanced DAX.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/sakshigangawane1504" target="_blank" class="btn btn-sm btn-outline">GitHub</a>
+              <a href="#" target="_blank" class="btn btn-sm btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ADD MORE PROJECTS HERE — copy the block above -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section bg-alt" id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <p class="section-subtitle">Where I've worked</p>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-role">Data Analyst Intern</h3>
+              <span class="timeline-date">Feb 2026 – May 2026</span>
+            </div>
+            <p class="timeline-company">Greateway Software Pvt. Ltd., Pune</p>
+            <ul class="timeline-points">
+              <li>Collected, cleaned, and analyzed retail and financial datasets using Python, SQL, and Power BI.</li>
+              <li>Analyzed 1,000+ transaction records using EDA to identify trends and customer behavior patterns.</li>
+              <li>Designed interactive Power BI dashboards to visualize KPIs, loan performance, and sales insights.</li>
+              <li>Applied advanced DAX calculations and data modeling to enhance reporting efficiency.</li>
+              <li>Supported data-driven decision-making through effective data storytelling and BI reporting.</li>
+            </ul>
+          </div>
+        </div>
+
+  <section class="section bg-alt" id="Education">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <p class="section-subtitle">Where I've learned</p>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-role">B.Tech — Computer Science & Engineering</h3>
+              <span class="timeline-date">2022 – 2026</span>
+            </div>
+            <p class="timeline-company">Dr. Babasaheb Ambedkar Technological University (DBATU), Lonere</p>
+            <ul class="timeline-points">
+              <li>Specializing in data analytics, database management, and software engineering.</li>
+              <li>Completed hands-on projects in Python, SQL, Power BI, and statistical analysis.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CERTIFICATIONS -->
+      <div class="certs-section">
+        <h3 class="certs-title">Certifications</h3>
+        <div class="certs-grid">
+          <div class="cert-card">
+            <span class="cert-icon">🏅</span>
+            <div>
+              <p class="cert-name">Data Analyst Internship Certification</p>
+              <p class="cert-org">Greateway Software Pvt. Ltd., Pune</p>
+            </div>
+          </div>
+          <div class="cert-card">
+            <span class="cert-icon">🏅</span>
+            <div>
+              <p class="cert-name">Data Analytics Certificate</p>
+              <p class="cert-org">Fusion Software Institute, Pune</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container contact-container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">I'm always open to new opportunities and collaborations.</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <div>
+              <p class="contact-label">Email</p>
+              <a href="mailto:sakshigangawane1504@gmail.com" class="contact-value">sakshigangawane1504@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <div>
+              <p class="contact-label">Phone</p>
+              <a href="tel:+919373538423" class="contact-value">+91 9373538423</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <p class="contact-label">Location</p>
+              <p class="contact-value">Pune, Maharashtra 411041, India</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">💼</span>
+            <div>
+              <p class="contact-label">LinkedIn</p>
+              <a href="https://www.linkedin.com/in/sakshi-gangawane-457627323" target="_blank" class="contact-value">linkedin.com/in/sakshi-gangawane</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🐙</span>
+            <div>
+              <p class="contact-label">GitHub</p>
+              <a href="https://github.com/sakshigangawane1504-bot" target="_blank" class="contact-value">github.com/sakshigangawane1504</a>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Hi Sakshi, I'd love to connect..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message ✉️</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Designed & Built by <strong>Sakshi Gangawane</strong> · 2025</p>
+    <p class="footer-sub">Data Analyst · Pune, Maharashtra 🇮🇳</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
