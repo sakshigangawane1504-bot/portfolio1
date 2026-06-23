@@ -461,34 +461,95 @@ img { max-width: 100%; display: block; }
 }
 
 /* ── CERTIFICATIONS ── */
-.certs-section { margin-top: 3rem; }
-.certs-title {
-  font-family: 'Sora', sans-serif;
-  font-size: 1.2rem; font-weight: 700;
-  margin-bottom: 1.2rem;
+
+.certs-section{
+  margin-top:3rem;
 }
 
-.certs-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1rem;
+.certs-title{
+  font-family:'Sora',sans-serif;
+  font-size:1.2rem;
+  font-weight:700;
+  margin-bottom:1.2rem;
 }
 
-.cert-card {
-  display: flex; align-items: center; gap: 1rem;
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 1.2rem 1.4rem;
-  transition: all var(--transition);
+.certs-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+  gap:1rem;
 }
-.cert-card:hover {
-  border-color: rgba(124,92,252,0.35);
-  transform: translateY(-3px);
+
+.cert-card{
+  display:flex;
+  align-items:center;
+  gap:1rem;
+
+  background:var(--card);
+
+  border:1px solid var(--border);
+
+  border-radius:var(--radius);
+
+  padding:1.2rem 1.4rem;
+
+  transition:all 0.3s ease;
+
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
 }
-.cert-icon { font-size: 2rem; flex-shrink: 0; }
-.cert-name { font-size: 0.9rem; font-weight: 500; margin-bottom: 0.2rem; }
-.cert-org { font-size: 0.8rem; color: var(--muted); }
+
+.cert-card:hover{
+
+  transform:translateY(-5px);
+
+  border-color:rgba(124,92,252,0.4);
+
+  box-shadow:0 10px 24px rgba(0,0,0,0.12);
+}
+
+.cert-icon{
+
+  font-size:2rem;
+
+  flex-shrink:0;
+}
+
+.cert-name{
+
+  font-size:0.95rem;
+
+  font-weight:600;
+
+  margin-bottom:0.25rem;
+}
+
+.cert-org{
+
+  font-size:0.8rem;
+
+  color:var(--muted);
+
+  margin-bottom:0.5rem;
+}
+
+.cert-link{
+
+  text-decoration:none;
+
+  color:#7c5cfc;
+
+  font-size:0.85rem;
+
+  font-weight:600;
+
+  transition:0.3s;
+}
+
+.cert-link:hover{
+
+  color:#5f3ff5;
+
+  text-decoration:underline;
+}
 
 /* ── SKILLS CATEGORIES ── */
 .skills-categories {
