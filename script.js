@@ -25,23 +25,22 @@ setInterval(() => {
   }, 300);
 }, 2500);
 
-// ── CONTACT FORM ──
 // ── CONTACT FORM WITH FORMSPREE ──
 const form = document.getElementById('contactForm');
 const formNote = document.getElementById('formNote');
- 
+
 form.addEventListener('submit', async function(e) {
   e.preventDefault();
- 
+
   const data = {
     name: document.getElementById('name').value,
     email: document.getElementById('email').value,
     message: document.getElementById('message').value
   };
- 
+
   // ✏️ Replace YOUR_CODE below with your Formspree code
   const FORMSPREE_URL = 'https://formspree.io/f/xaqgnoqr';
- 
+
   try {
     formNote.textContent = 'Sending...';
     const response = await fetch(FORMSPREE_URL, {
@@ -49,7 +48,7 @@ form.addEventListener('submit', async function(e) {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)
     });
- 
+
     if (response.ok) {
       formNote.style.color = '#7c5cfc';
       formNote.textContent = '✅ Message sent! Sakshi will get back to you soon.';
