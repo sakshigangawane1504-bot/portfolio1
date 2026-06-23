@@ -26,12 +26,43 @@ setInterval(() => {
 }, 2500);
 
 // ── CONTACT FORM ──
-function handleSubmit(e) {
+// ── CONTACT FORM WITH FORMSPREE ──
+const form = document.getElementById('contactForm');
+const formNote = document.getElementById('formNote');
+ 
+form.addEventListener('submit', async function(e) {
   e.preventDefault();
-  const note = document.getElementById('formNote');
-  note.textContent = '✅ Thanks! Sakshi will get back to you soon.';
-  e.target.reset();
-}
+ 
+  const data = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    message: document.getElementById('message').value
+  };
+ 
+  // ✏️ Replace YOUR_CODE below with your Formspree code
+  const FORMSPREE_URL = 'https://formspree.io/f/xaqgnoqr';
+ 
+  try {
+    formNote.textContent = 'Sending...';
+    const response = await fetch(FORMSPREE_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+ 
+    if (response.ok) {
+      formNote.style.color = '#7c5cfc';
+      formNote.textContent = '✅ Message sent! Sakshi will get back to you soon.';
+      form.reset();
+    } else {
+      formNote.style.color = '#e056a0';
+      formNote.textContent = '❌ Something went wrong. Please email directly.';
+    }
+  } catch (error) {
+    formNote.style.color = '#e056a0';
+    formNote.textContent = '❌ Something went wrong. Please email directly.';
+  }
+});
 
 // ── SCROLL REVEAL ANIMATION ──
 const observer = new IntersectionObserver((entries) => {
