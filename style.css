@@ -243,6 +243,7 @@ img { max-width: 100%; display: block; }
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
   gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .skill-card {
@@ -488,3 +489,52 @@ img { max-width: 100%; display: block; }
 .cert-icon { font-size: 2rem; flex-shrink: 0; }
 .cert-name { font-size: 0.9rem; font-weight: 500; margin-bottom: 0.2rem; }
 .cert-org { font-size: 0.8rem; color: var(--muted); }
+
+/* ── SKILLS CATEGORIES ── */
+.skills-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.skill-category {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.4rem;
+  transition: all var(--transition);
+}
+.skill-category:hover {
+  border-color: rgba(124,92,252,0.4);
+  transform: translateY(-3px);
+}
+
+.skill-category-header {
+  display: flex; align-items: center; gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+.skill-category-icon { font-size: 1.4rem; }
+.skill-category-title {
+  font-family: 'Sora', sans-serif;
+  font-size: 0.95rem; font-weight: 700;
+  color: var(--text);
+}
+
+.skill-tags {
+  display: flex; flex-wrap: wrap; gap: 0.5rem;
+}
+.skill-tag {
+  font-size: 0.78rem; font-weight: 500;
+  padding: 0.25rem 0.7rem;
+  background: rgba(124,92,252,0.1);
+  color: var(--muted);
+  border-radius: 20px;
+  border: 1px solid rgba(124,92,252,0.2);
+  transition: all var(--transition);
+}
+.skill-tag:hover {
+  background: rgba(124,92,252,0.2);
+  color: var(--text);
+  border-color: rgba(124,92,252,0.4);
+}
