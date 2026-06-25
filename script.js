@@ -96,3 +96,9 @@ window.addEventListener('scroll', () => {
     link.style.color = link.getAttribute('href') === `#${current}` ? '#7c5cfc' : '';
   });
 });
+// ── AUTO COUNT PROJECTS ──
+const totalProjects = document.querySelectorAll('.project-card').length;
+const projectCountEl = document.getElementById('projectCount');
+if (projectCountEl) {
+  projectCountEl.textContent = totalProjects + '+';
+}

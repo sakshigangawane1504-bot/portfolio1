@@ -19,6 +19,7 @@
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
       <li><a href="#extracurricular">Activities</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -31,6 +32,7 @@
     <a href="#skills" onclick="closeMobileMenu()">Skills</a>
     <a href="#projects" onclick="closeMobileMenu()">Projects</a>
     <a href="#experience" onclick="closeMobileMenu()">Experience</a>
+    <a href="#education" onclick="closeMobileMenu()">Education</a>
     <a href="#extracurricular" onclick="closeMobileMenu()">Activities</a>
     <a href="#contact" onclick="closeMobileMenu()">Contact</a>
   </div>
@@ -55,7 +57,6 @@
     <div class="hero-graphic">
       <div class="blob"></div>
       <div class="avatar-ring">
-        <!-- Replace with: <img src="your-photo.jpg" alt="Sakshi Gangawane" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" /> -->
         <img src="photo.png" alt="Sakshi Gangawane" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" />
       </div>
     </div>
@@ -80,7 +81,7 @@
           </p>
           <div class="about-stats">
             <div class="stat">
-              <span class="stat-num">2</span>
+              <span class="stat-num" id="projectCount">2</span>
               <span class="stat-label">Projects</span>
             </div>
             <div class="stat">
@@ -92,7 +93,6 @@
               <span class="stat-label">Certifications</span>
             </div>
           </div>
-          <!-- Save your resume as resume.pdf in the same folder -->
           <a href="resume.pdf" class="btn btn-primary" download>Download Resume</a>
         </div>
         <div class="about-image-box">
@@ -290,7 +290,6 @@
       <p class="section-subtitle">Data projects I've built</p>
       <div class="projects-grid">
 
-        <!-- PROJECT 1 -->
         <div class="project-card">
           <div class="project-img-box">
             <div class="project-emoji">🚚</div>
@@ -304,18 +303,16 @@
             </div>
             <h3 class="project-title">Supply Chain BI & Risk Analysis</h3>
             <p class="project-desc">
-              Analyzed 180K+ supply chain records across 53 business variables. Uncovered a 54.71% late delivery rate,
-              estimated $2.1M in losses, and delivered logistics optimization recommendations.
-            </p>
+              Analyzed 180K+ supply chain records across 53 business variables.
+              Uncovered a 54.71% late delivery rate, estimated $2.1M in losses,
+              and delivered logistics optimization recommendations.</p>
             <div class="project-links">
-              <!-- Add your GitHub link below -->
               <a href="https://github.com/sakshigangawane1504-bot/supply-chain-analysis" target="_blank" class="btn btn-sm btn-outline">GitHub</a>
               <a href="https://github.com/sakshigangawane1504-bot/supply-chain-analysis/blob/main/Suply_Chain_Data_Analysis.ipynb" target="_blank" class="btn btn-sm btn-primary">View Notebook</a>
             </div>
           </div>
         </div>
 
-        <!-- PROJECT 2 -->
         <div class="project-card">
           <div class="project-img-box">
             <div class="project-emoji">🏦</div>
@@ -329,17 +326,18 @@
             </div>
             <h3 class="project-title">Bank Loan Analysis Dashboard</h3>
             <p class="project-desc">
-              Built interactive Power BI dashboards to monitor loan applications, repayments, and KPIs.
-              Classified loans into Good/Bad categories and implemented MTD & YoY metrics using advanced DAX.
+              Built interactive Power BI dashboards to monitor loan applications,
+              repayments, and KPIs. Classified loans into Good/Bad categories and
+              implemented MTD & YoY metrics using advanced DAX.
             </p>
             <div class="project-links">
-              <a href="https://github.com/sakshigangawane1504" target="_blank" class="btn btn-sm btn-outline">GitHub</a>
+              <a href="https://github.com/sakshigangawane1504-bot" target="_blank" class="btn btn-sm btn-outline">GitHub</a>
               <a href="#" target="_blank" class="btn btn-sm btn-primary">View Project</a>
             </div>
           </div>
         </div>
 
-        <!-- ADD MORE PROJECTS HERE — copy the block above -->
+        <!-- ADD MORE PROJECTS HERE -->
 
       </div>
     </div>
@@ -394,68 +392,36 @@
       </div>
 
       <!-- CERTIFICATIONS -->
-<div class="certs-section">
-  <h3 class="certs-title">Certifications</h3>
+      <div class="certs-section">
+        <h3 class="certs-title">Certifications</h3>
+        <div class="certs-grid">
 
-  <div class="certs-grid">
+          <div class="cert-card">
+            <span class="cert-icon">🏅</span>
+            <div>
+              <p class="cert-name">Data Analyst Internship Completion Certificate</p>
+              <p class="cert-org">Greateway Software Pvt. Ltd., Pune</p>
+              <a href="https://drive.google.com/file/d/1PoyzVcXl2vxYyC8Q7zlDA-aUsDwa36qO/view?usp=sharing" target="_blank" class="cert-link">View Certificate →</a>
+            </div>
+          </div>
 
-    <!-- Certificate 1 -->
-    <div class="cert-card">
-      <span class="cert-icon">🏅</span>
+          <div class="cert-card">
+            <span class="cert-icon">🏅</span>
+            <div>
+              <p class="cert-name">Data Analytics Professional Certification</p>
+              <p class="cert-org">Fusion Software Institute, Pune</p>
+              <a href="https://drive.google.com/file/d/1exOvTKeGU2IJTPN0IOGqhNjO3gxrRRU1/view?usp=sharing" target="_blank" class="cert-link">View Certificate →</a>
+            </div>
+          </div>
 
-      <div>
-        <p class="cert-name">
-          Data Analyst Internship Completion Certificate
-        </p>
-
-        <p class="cert-org">
-          Greateway Software Pvt. Ltd., Pune
-        </p>
-
-        <a
-          href="https://drive.google.com/file/d/1PoyzVcXl2vxYyC8Q7zlDA-aUsDwa36qO/view?usp=sharing"
-          target="_blank"
-          class="cert-link">
-
-          View Certificate →
-        </a>
+        </div>
       </div>
-    </div>
-
-    <!-- Certificate 2 -->
-    <div class="cert-card">
-
-      <span class="cert-icon">🏅</span>
-
-      <div>
-
-        <p class="cert-name">
-          Data Analytics Professional Certification
-        </p>
-
-        <p class="cert-org">
-          Fusion Software Institute, Pune
-        </p>
-
-        <a
-          href="https://drive.google.com/file/d/1exOvTKeGU2IJTPN0IOGqhNjO3gxrRRU1/view?usp=sharing"
-          target="_blank"
-          class="cert-link">
-
-          View Certificate →
-        </a>
-
-      </div>
-    </div>
-
-  </div>
-</div>
 
     </div>
   </section>
 
   <!-- EXTRA CURRICULAR -->
-  <section class="section" id="extracurricular">
+  <section class="section bg-alt" id="extracurricular">
     <div class="container">
       <h2 class="section-title">Extra Curricular</h2>
       <p class="section-subtitle">Job Simulations & Online Programs</p>
@@ -478,7 +444,7 @@
           </div>
         </div>
 
-        <!-- ADD MORE CARDS HERE — copy the block above -->
+        <!-- ADD MORE CARDS HERE -->
 
       </div>
     </div>
@@ -491,6 +457,7 @@
       <p class="section-subtitle">I'm always open to new opportunities and collaborations.</p>
       <div class="contact-grid">
         <div class="contact-info">
+
           <div class="contact-item">
             <span class="contact-icon">📧</span>
             <div>
@@ -498,6 +465,7 @@
               <a href="mailto:sakshigangawane1504@gmail.com" class="contact-value">sakshigangawane1504@gmail.com</a>
             </div>
           </div>
+
           <div class="contact-item">
             <span class="contact-icon">📞</span>
             <div>
@@ -505,6 +473,7 @@
               <a href="tel:+919373538423" class="contact-value">+91 9373538423</a>
             </div>
           </div>
+
           <div class="contact-item">
             <span class="contact-icon">📍</span>
             <div>
@@ -512,6 +481,7 @@
               <p class="contact-value">Pune, Maharashtra 411041, India</p>
             </div>
           </div>
+
           <div class="contact-item">
             <span class="contact-icon">💼</span>
             <div>
@@ -519,13 +489,15 @@
               <a href="https://www.linkedin.com/in/sakshi-gangawane-457627323" target="_blank" class="contact-value">linkedin.com/in/sakshi-gangawane</a>
             </div>
           </div>
+
           <div class="contact-item">
             <span class="contact-icon">🐙</span>
             <div>
               <p class="contact-label">GitHub</p>
-              <a href="https://github.com/sakshigangawane1504-bot" target="_blank" class="contact-value">github.com/sakshigangawane1504</a>
+              <a href="https://github.com/sakshigangawane1504-bot" target="_blank" class="contact-value">github.com/sakshigangawane1504-bot</a>
             </div>
           </div>
+
         </div>
         <form class="contact-form" id="contactForm">
           <div class="form-group">
